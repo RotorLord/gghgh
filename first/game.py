@@ -1,4 +1,4 @@
-from chatacter import Character, Asssin, Vompire, Ninja, Samurai
+from first.chatacter import Ninja, Samurai
 
 player_1 = Ninja(name='Vasya', hp=1000, damage=2)
 print(player_1.stats())
