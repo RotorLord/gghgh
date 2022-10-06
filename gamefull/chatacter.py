@@ -1,11 +1,11 @@
 import random
 rd = random.randint(1,4)
 class Character:
-    def __init__(self, name, hp, damage,armor = "",creet = 1000 ):
+    def __init__(self, name, hp, damage,defence,creet = 1000 ):
         self.name  = name
         self.hp = hp
         self.damage = damage
-        self.armor = armor
+        self.defence = defence
         self.creet = creet
 
 
@@ -20,6 +20,9 @@ class Character:
     def deal_damage(self, damage):
         self.hp -= abs(damage)
 
+
+
+
     def stats(self):
 
         return \
@@ -32,11 +35,11 @@ class Character:
 
 class Asssin(Character):
 
-    def __init__(self, name, hp, damage, armor = "",creet = 1000):
+    def __init__(self, name, hp, damage, defence = "",creet = 1000):
         self.name = name
         self.hp = hp
         self.damage = damage
-        self.armor = armor
+        self.defence = defence
         self.creet = creet
 
     def deal_damage(self, damage):
@@ -60,11 +63,11 @@ class Asssin(Character):
 
 class Vompire(Character):
 
-    def __init__(self, name, hp, damage, armor = "",creet = 1000):
+    def __init__(self, name, hp, damage, defence = "",creet = 1000):
         self.name = name
         self.hp = hp
         self.damage = damage
-        self.armor = armor
+        self.defence = defence
         self.creet = creet
 
 
@@ -85,11 +88,11 @@ class Vompire(Character):
 
 class Ninja(Character):
 
-    def __init__(self, name, hp, damage, armor = "",creet = 1000):
+    def __init__(self, name, hp, damage, defence = "",creet = 1000):
         self.name = name
         self.hp = hp
         self.damage = damage
-        self.armor = armor
+        self.defence = defence
         self.creet = creet
 
     def deal_who(self, who):
@@ -100,11 +103,11 @@ class Ninja(Character):
 
 class Samurai(Character):
 
-    def __init__(self, name, hp, damage, armor = "",creet = 1000):
+    def __init__(self, name, hp, damage, defence = "",creet = 1000):
         self.name = name
         self.hp = hp
         self.damage = damage
-        self.armor = armor
+        self.defence = defence
         self.creet = creet
 
     def deal_who(self, who):

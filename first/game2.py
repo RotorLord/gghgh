@@ -1,4 +1,4 @@
-from first.chatacter import Character
+from gamefull.chatacter import Character
 class UnknownAction(Exception):
     def __init__(self, message):
         self.message = message
